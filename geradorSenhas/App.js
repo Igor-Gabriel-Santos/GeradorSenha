@@ -39,7 +39,7 @@ export default function App() {
       </TouchableOpacity>
 
       <Modal visible={modalVisible} animationType='fade' transparent={true}>
-      <ModalPassword/>
+      <ModalPassword senha={senhaGerada} fecharModal={ ()=> setModalVisible(false) }/>
       </Modal>
       
       <Text style={styles.senha}> {senhaGerada} </Text>
